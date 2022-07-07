@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 /**
  * For testing the methods in the WordOccurrences project.
  * @author Stephen Sturges Jr
- * @version 6/26/2022
+ * @version 07/07/2022
  */
 public class JUnitTestLogic {
 

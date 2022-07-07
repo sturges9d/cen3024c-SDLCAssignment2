@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 /**
  * This class contains the main method and controls the GUI functionality for the WordOccurrences class via JavaFX.
  * @author Stephen Sturges Jr
- * @version 06/19/2022
+ * @version 07/07/2022
  */
 public class WordOccurrencesGUI extends Application {
 	

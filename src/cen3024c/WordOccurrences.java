@@ -18,7 +18,7 @@ import java.util.Map.Entry;
  * This class is a modification of the CEN 3024C SDLC Assignment for the CEN3024C UI Design Assignment.
  * Usage: readText > convertArrayListToHashMap > sortHashMap > convertHashMapToString
  * @author Stephen Sturges Jr
- * @version 06/19/2022
+ * @version 07/07/2022
  */
 public class WordOccurrences {
     
