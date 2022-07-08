@@ -43,7 +43,7 @@ public class ConfirmBox {
 	 * Displays a confirmation box with window title and displaying the input message to the user with yes and no buttons.
 	 * @param title The title of the confirmation box window.
 	 * @param message The message to be displayed to the user.
-	 * @return boolean true (Yes) or false (No).
+	 * @return boolean, true ("Yes" button clicked) or false ("No" button clicked).
 	 */
 	public static boolean display(String title, String message) {
 		Stage window = new Stage();

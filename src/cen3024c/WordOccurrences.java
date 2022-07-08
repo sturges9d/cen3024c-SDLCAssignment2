@@ -15,7 +15,8 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 /**
- * This class is a modification of the CEN 3024C SDLC Assignment for the CEN3024C UI Design Assignment.
+ * This class contains methods for reading text from a webpage, counting the number of times a word is written, and sorting the list of words from greatest number of
+ * occurrences to least.
  * Usage: readText > convertArrayListToHashMap > sortHashMap > convertHashMapToString
  * @author Stephen Sturges Jr
  * @version 07/07/2022
@@ -25,7 +26,7 @@ public class WordOccurrences {
     /**
      * Loops through the ArrayList, counts the number of occurrences of each word, and outputs a HashMap containing each word and its number of occurrences.
      * @param inputText An ArrayList of Strings. Each string is a line of text from the readText method. 
-     * @return HashMap containing (word, number of occurrences) pairs.
+     * @return A HashMap containing (word, number of occurrences) pairs.
      */
 	public static HashMap<String, Integer> convertArrayListToHashMap(ArrayList<String> inputText) {
     	// Count the number of occurrences of a word in the ArrayList of text from the URL and store the word and its number of occurrences in a HashMap.
@@ -48,7 +49,7 @@ public class WordOccurrences {
     /**
      * Converts a sorted HashMap into Strings ending in a new line character for display.
      * @param inputText A HashMap containing a word and its number of occurrences.
-     * @return String in the format: "#. word, number_of_occurrences"
+     * @return A string in the format: "i. word, number_of_occurrences"
      */
     public static String convertHashMapToString(HashMap<String, Integer> inputText) {
     	String result = ""; // Used for output to TestClass GUI.
@@ -66,11 +67,11 @@ public class WordOccurrences {
     } // End of convertHashMapToString method.
     
     /**
-     * Reads the text from a webpage.
+     * Reads the text from a webpage given a URL, the first line, and the last line after the relevant text.
      * @param inputURL The URL of the webpage you wish to extract text from.
      * @param startText The first line of the text you want to extract.
      * @param endText The line after the last line you want to extract.
-     * @return ArrayList of lower case strings.
+     * @return An ArrayList of lower case strings, each a line of text from the webpage.
      */
     public static ArrayList<String> readText(String inputURL, String startText, String endText) {
     	ArrayList<String> result = new ArrayList<String>();
@@ -132,7 +133,7 @@ public class WordOccurrences {
     /**
      * Sorts the values stored in a HashMap according to the integer value, greatest to least.
      * @param inputText HashMap with String keys and Integer values containing a word and its number of occurrences.
-     * @return Sorted HashMap of words from highest occurrence to lowest.
+     * @return A sorted HashMap containing words and their number of occurrences from highest number of occurrences to lowest.
      */
     public static HashMap<String, Integer> sortHashMap(HashMap<String, Integer> inputText) {
         // Custom comparator to order the values (occurrences) from greatest to least.

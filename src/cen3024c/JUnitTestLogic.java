@@ -12,7 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.jupiter.api.Test;
 
 /**
- * For testing the methods in the WordOccurrences project.
+ * A group of JUnit tests used to test the methods in the WordOccurrences class.
  * @author Stephen Sturges Jr
  * @version 07/07/2022
  */

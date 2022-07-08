@@ -51,11 +51,11 @@ public class WordOccurrencesGUI extends Application {
 	private final int insetsLeft = 10;
 	
 	// Webpage variables.
-	/** String, holds the URL of the webpage to be analyzed. */
+	/** The URL of the webpage to be analyzed. */
 	String textURL = "https://www.gutenberg.org/files/1065/1065-h/1065-h.htm";
-	/** String, the first line of the text to be analyzed. */
+	/** The first line of the text to be analyzed. */
 	String startText = "The Raven"; 
-	/** String, the complete line of text after the final line that is to be counted. */
+	/** The complete line of text after the final line that is to be counted. */
 	String endText = "*** END OF THE PROJECT GUTENBERG EBOOK THE RAVEN ***"; 
 	
 	/**
@@ -78,7 +78,7 @@ public class WordOccurrencesGUI extends Application {
 	
 	/**
 	 * Overrides the start method from the Application class.
-	 * @param primaryStage // TODO: Figure out what to comment here.
+	 * @param primaryStage The main window for the program. The window variable gets this parameter.
 	 */
 	@Override
 	public void start(Stage primaryStage) throws Exception {
